@@ -1,0 +1,151 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{geometry}
+
+\geometry{top=0.5in, bottom=0.5in, left=0.65in, right=0.65in}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%--- Custom Commands ---
+\newcommand{\resumeItem}[1]{\item\small{#1 \vspace{-2pt}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%==============================
+\begin{document}
+%==============================
+
+%-----------HEADER-----------
+\begin{center}
+    {\Huge \scshape \textbf{Satyam Srivastava}} \\ \vspace{4pt}
+    \small
+    +91-9305596110 $|$
+    \href{mailto:satyams.dd22.cs@nitp.ac.in}{satyams.dd22.cs@nitp.ac.in} $|$
+    \href{mailto:satyamsrivastava534@gmail.com}{satyamsrivastava534@gmail.com} \\ \vspace{2pt}
+    \href{https://linkedin.com/in/satyamsrivastava}{linkedin.com/in/satyamsrivastava} $|$
+    \href{https://github.com/Satyam-344}{github.com/Satyam-344}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+\small{
+Computer Science and Engineering student at NIT Patna (CGPA: 7.24/10) with hands-on experience in data analytics and Python programming. Built end-to-end analytics projects covering exploratory data analysis, SQL-based business intelligence, and interactive dashboard development using Pandas, NumPy, Matplotlib, Seaborn, Streamlit, and Plotly. Skilled in data preprocessing, statistical analysis, KPI tracking, and translating raw datasets into actionable business insights. Strong foundation in Data Structures and Algorithms, Database Management Systems, and Object-Oriented Programming.
+}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming Languages}{: C, C++, Python, SQL, JavaScript, HTML, CSS} \\[2pt]
+     \textbf{Data Analytics}{: Exploratory Data Analysis (EDA), Statistical Analysis, Business Intelligence, Data Visualization, KPI Tracking, Cohort Analysis, Feature Engineering} \\[2pt]
+     \textbf{Libraries and Frameworks}{: Pandas, NumPy, Matplotlib, Seaborn, Streamlit, Plotly} \\[2pt]
+     \textbf{Databases}{: SQLite, MySQL, MongoDB} \\[2pt]
+     \textbf{Tools and Platforms}{: Git, GitHub, Jupyter Notebook, Visual Studio Code} \\[2pt]
+     \textbf{Concepts}{: Data Cleaning and Preprocessing, Outlier Detection, Correlation Analysis, Data Storytelling, Data Structures and Algorithms, Object-Oriented Programming (OOP), Database Management Systems (DBMS), Operating Systems}
+    }}
+\end{itemize}
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {National Institute of Technology, Patna}{Patna, Bihar}
+      {Integrated B.Tech + M.Tech -- Computer Science and Engineering \hspace{4pt} CGPA: 7.24 / 10.0}{2022 -- 2027}
+    \resumeSubheading
+      {Senior Secondary (Class XII) -- Central Board of Secondary Education}{India}
+      {Percentage: 70\%}{2022}
+    \resumeSubheading
+      {Secondary (Class X) -- Central Board of Secondary Education}{India}
+      {Percentage: 79.4\%}{2020}
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+    \resumeProjectHeading
+        {\textbf{Digital Payment Transaction Analytics} $|$ \emph{Python, Pandas, NumPy, Matplotlib, Seaborn, Streamlit, Plotly}}{June 2026}
+    \resumeItemListStart
+        \resumeItem{Engineered an end-to-end analytics pipeline analyzing 50,000 synthetic UPI and digital payment transactions across 5,000 users using Python and Pandas; performed full EDA to surface business KPIs including GMV trends, payment success rates, and category-wise spending patterns.}
+        \resumeItem{Generated a realistic synthetic dataset using NumPy statistical distributions (log-normal for transaction amounts, weighted sampling for payment methods and cities) modeling real-world Indian UPI behavior across 9 categories, 5 payment methods, and 10 cities.}
+        \resumeItem{Built 9 business insight visualizations using Matplotlib and Seaborn including monthly GMV dual-axis trend chart, hour-by-day transaction heatmap, demographic cohort spending breakdown, and payment method failure rate comparison.}
+        \resumeItem{Developed an interactive Streamlit dashboard with Plotly supporting real-time filtering by city, category, payment method, and quarter; identified that top 5\% of transactions drive 31.4\% of total GMV -- a critical Pareto concentration finding.}
+        \resumeItem{Published complete project at \href{https://github.com/Satyam-344/payment-analytics}{github.com/Satyam-344/payment-analytics} with a structured generate-analyze-dashboard pipeline for full reproducibility.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+        {\textbf{Financial Analytics -- SQL Business Intelligence} $|$ \emph{Python, SQLite, SQL, Pandas}}{June 2026}
+    \resumeItemListStart
+        \resumeItem{Designed a normalized SQLite relational database schema and ingested 37,447 synthetic financial transactions across 500 users spanning 2023--2024, covering 10 spending categories across multiple Indian cities.}
+        \resumeItem{Authored 17 structured SQL business queries addressing real-world analytics use cases: executive KPI dashboards, year-over-year GMV growth, quarterly trend analysis, day-of-week spending patterns, city-wise user segmentation, and payment mode performance breakdown.}
+        \resumeItem{Implemented advanced SQL techniques including window functions, CTEs, and correlated subqueries for outlier detection and high-value user identification using percentile-based thresholds, enabling data-driven customer segmentation.}
+        \resumeItem{Automated the complete analytics pipeline in Python -- database creation, data ingestion, query execution, and formatted result output -- enabling single-command end-to-end reproducibility.}
+        \resumeItem{Published project at \href{https://github.com/Satyam-344/financial-analytics}{github.com/Satyam-344/financial-analytics} with full SQL schema, 17 annotated business queries, and a Python automation script.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {NPTEL Certification: Joy of Computing using Python}{December 2024}
+      {National Programme on Technology Enhanced Learning (NPTEL) -- IIT Madras}{}
+    \resumeItemListStart
+        \resumeItem{Covered Python programming fundamentals, problem-solving techniques, algorithmic thinking, data structures, and control flow through structured assignments and exercises.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------POSITIONS OF RESPONSIBILITY-----------
+\section{Positions of Responsibility}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Team Lead -- Minor Project}{January 2025}
+      {National Institute of Technology, Patna}{Patna, Bihar}
+    \resumeItemListStart
+        \resumeItem{Led a team of 3 members to plan, design, and deliver a college minor project on schedule, coordinating all tasks and tracking milestones throughout the development lifecycle.}
+        \resumeItem{Mentored team members, delegated responsibilities based on individual strengths, and conducted regular progress meetings to ensure timely completion.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
