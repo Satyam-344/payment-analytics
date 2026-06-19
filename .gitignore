@@ -23,6 +23,9 @@ env/
 # Dataset (large file — regenerate with generate_data.py)
 transactions.csv
 
+# Local only — do NOT push
+INTERVIEW_PREP.md
+
 # Claude Code — local only, do NOT push
 .claude/
 .claude.json
